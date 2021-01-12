@@ -36,6 +36,7 @@ function App() {
   return (
     <div className="App">
       <h1>My Notes App</h1>
+      <hr />
       <input
         onChange={e => setFormData({ ...formData, 'name': e.target.value})}
         placeholder="Note name"
@@ -64,3 +65,4 @@ function App() {
 }
 
 export default withAuthenticator(App);
+
